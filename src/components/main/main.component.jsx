@@ -1,27 +1,27 @@
 import React from "react";
-import { Data } from "../../data";
+import { data } from "../../data";
 import "./main.css";
 
 const Main = () => {
-    console.log(Data)
+    console.log(data[0].houses)
     return(
         <div className="main">
-            <div className="house">
+            {data[0].houses.map(data => (<div className="house">
                 <div className="top">
-                    <img src="" alt="" className="house-image"/>
+                    <img src={data.src} alt={data.alt} className="house-image"/>
                     <img src="" alt="" className="like"/>
                 </div>
                 <div className="bottom">
-                    <p>Name of the listing</p>
-                    <p>Listing's Host</p>
-                    <p>Date available</p>
-                    <p>Cost per night</p>
+                    <p>{data.name}</p>
+                    <p>{data.host}</p>
+                    <p>{data.date}</p>
+                    <p>{data.cost}</p>
                     <div className="rating">
                         <img src="" alt="" className="star" />
-                        <p>Ratings</p>
+                        <p>{data.ratings}</p>
                     </div>
                 </div>
-            </div>
+            </div>))}
         </div>
     )
 }

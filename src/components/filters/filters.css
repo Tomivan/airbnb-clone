@@ -1,0 +1,17 @@
+.filters{
+    display: flex;
+    padding: 1em;
+}
+.filter-icon{
+    height: 8vh;
+    width: 5vw;
+    padding-right: 0.5em;
+}
+.filter-button{
+    background: none;
+    width: 10vw;
+    height: 8vh;
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
+    margin-left: 5%;
+}

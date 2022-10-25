@@ -1,0 +1,12 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.house-image{
+    height: 35vh;
+    width: 22vw;
+    padding-left: 1.5em;
+    border-radius: 10px;
+}

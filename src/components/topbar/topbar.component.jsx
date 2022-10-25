@@ -1,24 +1,27 @@
 import React from "react";
+import Airbnb from "../../assets/images/Airbnb.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass, faGlobe, faBars, faUser } from '@fortawesome/free-solid-svg-icons';
 import "./topbar.css";
 
 const Topbar = () => {
     return (
         <div className="topbar">
-            <img src="" alt="The official airbnb logo" className="logo" />
+            <img src={Airbnb} alt="The official airbnb logo" className="logo" />
             <div className="middle">
                 <p>Anyweek</p>
                 <hr />
                 <p>Anywhere</p>
                 <hr />
                 <p>Add guest</p>
-                <img src="" alt="an icon for search"  className="search-icon"/>
+                <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon"/>
             </div>
             <div className="end">
                 <p>Become a host</p>
-                <img src="" alt="" />
+                    <FontAwesomeIcon icon={faGlobe} className="globe-icon"/>
                 <div className="user">
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+                    <FontAwesomeIcon icon={faBars} className="bar-icon"/>
+                    <FontAwesomeIcon icon={faUser} className="user-icon"/>
                 </div>
             </div>
         </div>
